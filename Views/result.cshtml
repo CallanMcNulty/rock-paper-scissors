@@ -1,3 +1,13 @@
-<h1>@Model.Play() Wins!</h1>
+<link rel="stylesheet" href="../Content/css/styles.css">
+
+@if(Model.Play()=="Draw")
+{
+  <h1>@Model.Play()</h1>
+}
+else
+{
+  <h1>@Model.Play() wins!</h1>
+}
+<hr>
 <h3>@Model.GetChoices()[0] vs. @Model.GetChoices()[1]</h3>
 <p><a href="/">Home</a></p>

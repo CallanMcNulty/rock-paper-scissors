@@ -1,6 +1,9 @@
-<h1>RockPaperScissors</h1>
+<link rel="stylesheet" href="../Content/css/styles.css">
+
+<h1>Rock Paper Scissors</h1>
+<hr>
 <form action="/game" method="post" name="form">
-  <label for="player1"></label>
+  <label for="player1">Player 1</label>
   <select class="form-control" name="player1" id="player1" onchange="hide(this)">
     <option selected="true" disabled="disabled">------</option>
     <option>Rock</option>
@@ -8,7 +11,8 @@
     <option>Paper</option>
     <option>Random</option>
   </select>
-  <label for="player2"></label>
+  <input type="text" id="player1filler" disabled="disabled" value="Locked In">
+  <label for="player2">Player 2</label>
   <select class="form-control" name="player2" id="player2" onchange="hide(this)">
     <option selected="true" disabled="disabled">------</option>
     <option>Rock</option>
@@ -16,11 +20,13 @@
     <option>Paper</option>
     <option>Random</option>
   </select>
+  <input type="text" id="player2filler" disabled="disabled" value="Locked In">
   <button type="button" name="button" onclick="return checkForm()">go!</button>
 </form>
 <script type="text/javascript">
   function hide(e) {
-    e.style.visibility = "hidden";
+    e.style.display = "none";
+    document.getElementById(e.id+"filler").style.display = "inline-block";
   }
   function checkForm() {
     if(document.form.player1.value!="------" && document.form.player2.value!="------" ) {

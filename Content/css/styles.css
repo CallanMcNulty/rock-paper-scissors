@@ -1,0 +1,55 @@
+body{
+  color: white;
+  background-color: #496E38;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1{
+  font-size: 80px;
+}
+
+select{
+  height: 30px;
+  width: 130px;
+}
+
+button {
+  height: 30px;
+  width: 60px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+option {
+  font-size: 18px;
+}
+
+#player1 {
+  margin-right: 30px;
+}
+#player1filler {
+  margin-right: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
+hr {
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+a {
+  color: blue;
+}
+
+input {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 30px;
+  width: 130px;
+}
