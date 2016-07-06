@@ -41,5 +41,9 @@ namespace RockPaperScissorsObjects
       _choices[0] = p1;
       _choices[1] = p2;
     }
+    public string[] GetChoices()
+    {
+      return _choices;
+    }
   }
 }
